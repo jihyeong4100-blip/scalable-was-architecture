@@ -1,6 +1,6 @@
 # jmx_exporter_config.yml
 startDelaySeconds: 0
-hostPort: 127.0.0.1:9010
+
 beans:
   - Jvm:
       - type: "java.lang<type=OperatingSystem>.*"

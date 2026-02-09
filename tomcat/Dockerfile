@@ -21,8 +21,10 @@ RUN apt-get clean && \
 COPY ./jmx_exporter_config.yml /usr/local/tomcat/conf/jmx_exporter_config.yml
 
 # CATALINA_OPTS에 JMX Exporter 추가
-ENV CATALINA_OPTS="-javaagent:/usr/local/tomcat/lib/jmx_prometheus_javaagent.jar=${JMX_PORT}:/usr/local/tomcat/conf/jmx_exporter_config.yml"
+
 
 EXPOSE 8080
+COPY ./setenv.sh /usr/local/tomcat/bin/setenv.sh
+
 # JMX Exporter 포트
 EXPOSE 9010
