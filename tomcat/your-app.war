@@ -1,0 +1,4 @@
+# This is a placeholder for your web application archive.
+# Replace this with your actual .war file.
+# For a basic test, you can create a simple index.jsp file:
+# <html><body><h1>Hello from Tomcat!</h1></body></html>
