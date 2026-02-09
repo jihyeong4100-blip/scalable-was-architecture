@@ -1,6 +1,6 @@
 FROM tomcat:9.0-jdk11-openjdk
 
-COPY ./your-app.war /usr/local/tomcat/webapps/
+
 
 # Update apt and install dependencies
 RUN set -ex; \
